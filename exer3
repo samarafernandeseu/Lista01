@@ -1,0 +1,23 @@
+///3. Criar um programa que calcule a média de salários de uma empresa, pedindo ao usuário a grade de funcionários e os salários, e devolvendo a média salarial.///
+import java.util.Scanner;
+
+public class Lista01 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("informe os salários:");
+        double n1, n2, n3, n4, media;
+        System.out.println("Salário n1:");
+        n1 = sc.nextDouble();
+        System.out.println("Salário n2:");
+        n2 = sc.nextDouble();
+        System.out.println("Salário n3:");
+        n3 = sc.nextDouble();
+        System.out.println("Salário n4:");
+        n4 = sc.nextDouble();
+
+
+        media = (n1 + n2 + n3 + n4) / 4;
+        System.out.println("A média salarial da empresa é de R$ " + media);
+    }
+}
